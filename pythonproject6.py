@@ -24,4 +24,4 @@ print("Only get the values of the dictionary:")
 for oneValue in oneDict.values():
     print("We have values " + str(oneValue) + ", but not the key.")
 print("From key to value is easy; \n but from value to key is hard. Huh...")
-#Bonus: \n\ prints in a new line
+#Bonus: \n prints in a new line
