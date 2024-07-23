@@ -56,3 +56,4 @@ del dudeAges[toKill-1]
 print("Congratulations! " + kingName + "'s kingdom knows peace once again!")
 
 #what will the code do if someone enters the wrong input (letters instead of numbers) for certain lines of code?
+#we can use exception handling to do deal with that
