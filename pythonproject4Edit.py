@@ -15,6 +15,8 @@ if numJewels:
     except ValueError:
         print('Please enter an integer.')
         numJewels = int(input("Enter number of jewels: "))
+else:
+    numJewels = int
 
 print("My king, " + kingName + ", what price does each jewel carry?")
 costOfJewels = float(input("Enter price of jewels: "))
@@ -26,6 +28,8 @@ if costOfJewels:
     except ValueError:
         print('Please enter an interger.')
         costOfJewels = float(input('Enter the price of jewels: '))
+else:
+    costOfJewels = float
 
 totalPrize = numJewels * costOfJewels
 #what will the code do if someone enters the wrong input (letters instead of numbers) for certain lines of code?
