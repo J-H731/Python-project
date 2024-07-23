@@ -2,22 +2,30 @@ print('The King and Three Musketeers')
 print("Hello your great majesty. May I prompt you to enter your name below?")
 kingName = input('Name: ') 
 
+# make a loop where 'if' the input is not a number it asks for input to be a number
+
 print("The whole kingdom is aware of the tragedy that has befell your imminence. The terrible Musketeers have taken off with your jewels!")
 print("My great king, " + kingName + ", how many jewels graced the halls of your treasury?")
 numJewels = int(input("Enter number of jewels: "))
 #place "int" before the input so that the stupid program knows it is a number and not a string.
 
+if numJewels:
+    try:
+        string_int = str(numJewels)
+    except ValueError:
+        print('Please enter an integer.')
+        numJewels = int(input("Enter number of jewels: "))
+
 print("My king, " + kingName + ", what price does each jewel carry?")
 costOfJewels = float(input("Enter price of jewels: "))
 #"float" denotes decimal point numbers, whereas "int" denotes integers or whole numbers.
 
-#fix loop for if the input is not a number so that code asks for input of number
-try:
-  string_int = str(costOfJewels)
-  print(string_int)
-except ValueError:
-  print('Please enter an integer.')
-costOfJewels = float(input("Enter price of jewels: "))
+if costOfJewels:
+    try:
+        string_int = str(costOfJewels)
+    except ValueError:
+        print('Please enter an interger.')
+        costOfJewels = float(input('Enter the price of jewels: '))
 
 totalPrize = numJewels * costOfJewels
 
