@@ -11,6 +11,14 @@ print("My king, " + kingName + ", what price does each jewel carry?")
 costOfJewels = float(input("Enter price of jewels: "))
 #"float" denotes decimal point numbers, whereas "int" denotes integers or whole numbers.
 
+#fix loop for if the input is not a number so that code asks for input of number
+try:
+  string_int = str(costOfJewels)
+  print(string_int)
+except ValueError:
+  print('Please enter an integer.')
+costOfJewels = float(input("Enter price of jewels: "))
+
 totalPrize = numJewels * costOfJewels
 
 print('Here is the worth of your great treasury, ' + kingName + '!')
