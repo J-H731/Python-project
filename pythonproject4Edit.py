@@ -28,6 +28,8 @@ if costOfJewels:
         costOfJewels = float(input('Enter the price of jewels: '))
 
 totalPrize = numJewels * costOfJewels
+#what will the code do if someone enters the wrong input (letters instead of numbers) for certain lines of code?
+#we can use exception handling to do deal with that or maybe an if-else statement
 
 print('Here is the worth of your great treasury, ' + kingName + '!')
 print(totalPrize)
@@ -70,6 +72,3 @@ del dudeNames[toKill-1]
 del dudeAges[toKill-1]
 
 print("Congratulations! " + kingName + "'s kingdom knows peace once again!")
-
-#what will the code do if someone enters the wrong input (letters instead of numbers) for certain lines of code?
-#we can use exception handling to do deal with that or maybe an if-else statement
