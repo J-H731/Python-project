@@ -10,11 +10,8 @@ numJewels = int(input("Enter number of jewels: "))
 #place "int" before the input so that the stupid program knows it is a number and not a string.
 
 if numJewels:
-    try:
-        string_int = str(numJewels)
-    except ValueError:
-        print('Please enter an integer.')
-        numJewels = int(input("Enter number of jewels: "))
+    numJewels = int(str())
+    raise ValueError ('Please enter an integer.')
 else:
     numJewels = int
 
@@ -23,11 +20,8 @@ costOfJewels = float(input("Enter price of jewels: "))
 #"float" denotes decimal point numbers, whereas "int" denotes integers or whole numbers.
 
 if costOfJewels:
-    try:
-        string_int = str(costOfJewels)
-    except ValueError:
-        print('Please enter an interger.')
-        costOfJewels = float(input('Enter the price of jewels: '))
+    costofJewels = float(str())
+    raise ValueError ('Please enter an interger.')
 else:
     costOfJewels = float
 

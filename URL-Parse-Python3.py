@@ -1,6 +1,5 @@
 
 # coding: utf-8
-
 import urllib.request
 import sys
 # these import statements allow us to use 'modules' aka 'libraries' .... code written by others that we can use
