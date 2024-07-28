@@ -22,7 +22,7 @@ while numJewels:
             break
     except:
         print("No integer or number entered.....")
-        stopOrProceed = input("You have not entered a number or integer. Enter 1 to stop and any number to continue.")
+        stopOrProceed = input("You have not entered an integer. \n Enter 1 to stop and any number to continue: ")
         if stopOrProceed =="1" :
             print("Okay, stopping the programme.")
             break
@@ -42,7 +42,7 @@ while costOfJewels:
             break
     except:
         print("No integer or number entered.....")
-        stopOrProceed = input("You have not entered a number or integer. \nEnter 1 to stop and any number to continue: ")
+        stopOrProceed = input("You have not entered a number. \n Enter 1 to stop and any number to continue: ")
         if stopOrProceed =="1" :
             print("Okay, stopping the programme.")
             break
@@ -98,7 +98,7 @@ while toKill:
             break
     except: 
         print("No suspect entered")
-        stopOrProceed = input("You have not entered a number or integer. \nEnter 1 to stop and any number to continue: ")
+        stopOrProceed = input("You have not entered a number. \n Enter 1 to stop and any number to continue: ")
         if stopOrProceed =="1" :
             print("Okay, stopping...")
             break
