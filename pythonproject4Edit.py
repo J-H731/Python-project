@@ -27,7 +27,7 @@ while numJewels:
             print("Okay, stopping the programme.")
             break
         else:
-            print("Aweseome, " + kingName + ", continuing...")
+            print("Aweseome, " + kingName + ", continuing ...")
             continue
         raise
     break
