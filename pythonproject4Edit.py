@@ -27,7 +27,7 @@ while numJewels:
             print("Okay, stopping the programme.")
             break
         else:
-            print("Aweseome, " + kingName + ", continuing the programme.")
+            print("Aweseome, " + kingName + ", continuing...")
             continue
         raise
     break
@@ -47,7 +47,7 @@ while costOfJewels:
             print("Okay, stopping the programme.")
             break
         else:
-            print("Aweseome, " + kingName + ", continuing the programme.")
+            print("Aweseome, " + kingName + ", continuing...")
             continue
         raise
     break
