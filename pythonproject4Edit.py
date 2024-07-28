@@ -4,26 +4,40 @@ kingName = input('Name: ')
 
 # make a loop where 'if' the input is not a number it asks for input to be a number
 
+# our variables:
+numJewels = int
+costOfJewels = float
+
 print("The whole kingdom is aware of the tragedy that has befell your imminence. The terrible Musketeers have taken off with your jewels!")
-print("My great king, " + kingName + ", how many jewels graced the halls of your treasury?")
-numJewels = int(input("Enter number of jewels: "))
+
+# now we have our loop
+while numJewels:
+    try:
+        print("My great king, " + kingName + ", how many jewels graced the halls of your treasury?")
+        numJewels = int(input("Enter number of jewels: "))
+        if numJewels == "":
+            print("Please enter an interger.")
+            break
+        print("My king, " + kingName + ", what price does each jewel carry?")
+        costOfJewels = float(input("Enter price of jewels: "))
+        if costOfJewels == "":
+            print("Please enter a number.")
+            break
+    except:
+        print("No integer or number entered.....")
+        stopOrProceed = input("You have not entered a number or integer. Enter 1 to stop and any number to continue.")
+        if stopOrProceed =="1" :
+            print("Okay, stopping the programme.")
+            break
+        else:
+            print("Aweseome, " + kingName + ", continuing the programme.")
+            continue
+        raise
+
+
 #place "int" before the input so that the stupid program knows it is a number and not a string.
-
-if numJewels:
-    numJewels = int(str())
-    raise ValueError ('Please enter an integer.')
-else:
-    numJewels = int
-
-print("My king, " + kingName + ", what price does each jewel carry?")
-costOfJewels = float(input("Enter price of jewels: "))
 #"float" denotes decimal point numbers, whereas "int" denotes integers or whole numbers.
-
-if costOfJewels:
-    costofJewels = float(str())
-    raise ValueError ('Please enter an interger.')
-else:
-    costOfJewels = float
+# here is the end of the loop and continuation of 'game'
 
 totalPrize = numJewels * costOfJewels
 #what will the code do if someone enters the wrong input (letters instead of numbers) for certain lines of code?
