@@ -3,6 +3,7 @@ print("Hello your great majesty. May I prompt you to enter your name below?")
 kingName = input('Name: ') 
 
 # make a loop where 'if' the input is not a number it asks for input to be a number
+#what will the code do if someone enters the wrong input (letters instead of numbers) for certain lines of code?
 
 # our variables:
 numJewels = int
@@ -15,13 +16,9 @@ while numJewels:
     try:
         print("My great king, " + kingName + ", how many jewels graced the halls of your treasury?")
         numJewels = int(input("Enter number of jewels: "))
+        #place "int" before the input so that the stupid program knows it is a number and not a string.
         if numJewels == "":
             print("Please enter an interger.")
-            break
-        print("My king, " + kingName + ", what price does each jewel carry?")
-        costOfJewels = float(input("Enter price of jewels: "))
-        if costOfJewels == "":
-            print("Please enter a number.")
             break
     except:
         print("No integer or number entered.....")
@@ -33,15 +30,30 @@ while numJewels:
             print("Aweseome, " + kingName + ", continuing the programme.")
             continue
         raise
+    break
 
+while costOfJewels:
+    try:
+        print("My king, " + kingName + ", what price does each jewel carry?")
+        costOfJewels = float(input("Enter price of jewels: "))
+        #"float" denotes decimal point numbers, whereas "int" denotes integers or whole numbers.
+        if costOfJewels == "":
+            print("Please enter a number.")
+            break
+    except:
+        print("No integer or number entered.....")
+        stopOrProceed = input("You have not entered a number or integer. \nEnter 1 to stop and any number to continue: ")
+        if stopOrProceed =="1" :
+            print("Okay, stopping the programme.")
+            break
+        else:
+            print("Aweseome, " + kingName + ", continuing the programme.")
+            continue
+        raise
+    break
 
-#place "int" before the input so that the stupid program knows it is a number and not a string.
-#"float" denotes decimal point numbers, whereas "int" denotes integers or whole numbers.
 # here is the end of the loop and continuation of 'game'
-
 totalPrize = numJewels * costOfJewels
-#what will the code do if someone enters the wrong input (letters instead of numbers) for certain lines of code?
-#we can use exception handling to do deal with that or maybe an if-else statement
 
 print('Here is the worth of your great treasury, ' + kingName + '!')
 print(totalPrize)
@@ -74,8 +86,27 @@ print(dudeAges)
 #"len" gives number of elements in an array
 print("There are " + str(len(dudeNames)) + " suspects.")
 
-print("Your majesty, " + kingName + ", which of the suspects would you like to execute?")
-toKill = int(input("Enter the # of the musketeer to execute: "))
+# new variable:
+toKill = int
+
+while toKill:
+    try:
+        print("Your majesty, " + kingName + ", which of the suspects would you like to execute?")
+        toKill = int(input("Enter the # of the musketeer to execute: "))
+        if toKill == "" :
+            print("You have not entered a suspect's number.")
+            break
+    except: 
+        print("No suspect entered")
+        stopOrProceed = input("You have not entered a number or integer. \nEnter 1 to stop and any number to continue: ")
+        if stopOrProceed =="1" :
+            print("Okay, stopping...")
+            break
+        else:
+            print("Wonderful, " + kingName + ", continuing...")
+            continue
+        raise
+    break
 
 print("Executing: " + dudeNames[toKill-1] + " , aged " + str(dudeAges[toKill-1]) + ".")
 print("Finally, "+ str(dudeNames[toKill-1]) + " has been executed.")
