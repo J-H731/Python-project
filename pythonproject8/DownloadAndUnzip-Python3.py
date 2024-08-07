@@ -213,9 +213,6 @@ listOfListsSortedByQty = sorted(listOfLists, key=lambda x:x[2], reverse=True)
 # reverse = True means that sort will be descending
 listOfListsSortedByQty = sorted(listOfLists, key=lambda x: x[1], reverse=True)
 
-
-listOfListsSortedByQty
-
 ########################################################################
 # Step 5: Write out an excel file with the summary of the top movers,
 # and most heavily traded files
