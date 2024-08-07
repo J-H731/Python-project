@@ -13,13 +13,9 @@ import urllib.request
 # bunch of interesting market data
 urlOfFileName = "http://www.nseindia.com/content/historical/EQUITIES/2015/JUL/cm17JUL2015bhav.csv.zip"
 
-urlOfFileName
-
 # initialize a variable with the local file in which to store the URL
 # (this is a path on my local desktop)
 localZipFilePath = "/Users/swethakolalapudi/Desktop/cm17JUL2015bhav2.csv.zip"
-
-localZipFilePath
 
 # Now a bit of boilerplate code to actually download the file. The website
 # of the NSE does not like bots (automated scripts) that attempt to scrape
@@ -34,9 +30,6 @@ hdr = {'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, 
        'Accept-Language':'en-US,en;q=0.8',
        'Connection':'keep-alive'
       }
-
-
-hdr
 
 # Now for the code that actually downloads the page and stores to file
 
