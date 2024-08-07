@@ -6,4 +6,4 @@ niceString = 'If a circle has radius ' + str(radiusOfCircle) + ' units, then its
 
 print(niceString)
 
-#doesn't need specification of variables as numbers since the numbers are alread disclosed unlike with inputs.
+#doesn't need specification of variables as numbers since the numbers are already disclosed unlike with inputs.
