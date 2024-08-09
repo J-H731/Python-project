@@ -1,3 +1,4 @@
+# sourcery skip: simplify-negative-index
 print('The King and Three Musketeers')
 print("Hello your great majesty. May I prompt you to enter your name below?")
 kingName = input('Name: ') 
