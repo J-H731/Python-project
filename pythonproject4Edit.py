@@ -18,7 +18,7 @@ while numJewels:
         numJewels = int(input("Enter number of jewels: "))
         #place "int" before the input so that the stupid program knows it is a number and not a string.
         if numJewels == "":
-            print("Please enter an interger.")
+            print("Please enter an integer.")
             break
     except:
         print("No integer or number entered.....")
@@ -27,7 +27,7 @@ while numJewels:
             print("Okay, stopping the programme.")
             break
         else:
-            print("Aweseome, " + kingName + ", continuing ...")
+            print("Awesome, " + kingName + ", continuing ...")
             continue
         raise
     break
@@ -47,7 +47,7 @@ while costOfJewels:
             print("Okay, stopping the programme.")
             break
         else:
-            print("Aweseome, " + kingName + ", continuing...")
+            print("Awesome, " + kingName + ", continuing...")
             continue
         raise
     break
@@ -72,7 +72,7 @@ print(dudeAges)
 print("Oh dear, I greatly apologize, " + kingName + ", there has been a problem with the paperwork.")
 print("One moment while we get accurate information, your majesty.")
 #name and ages of D'Artagnan is out of order therefore we fix it using temporaryVariable and append
-#"pop" rmoves and returns a specific element in an array
+#"pop" removes and returns a specific element in an array
 tempVariable = dudeNames.pop(0)
 print(tempVariable)
 print("Aged: " + str(dudeAges [len(dudeAges) - 1]) + ".")
